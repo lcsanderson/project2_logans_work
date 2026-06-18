@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   animation: fadeIn 0.5s ease-in-out; /* used for creating soft transition between pages*/
   font-family: Inter;
+  margin-left: 50px;
 }
 
 @keyframes fadeIn {
@@ -24,49 +25,56 @@ h1 {
 }
 
 /* Center the bar on the page with some breathing room */
-  .search-wrapper {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    font-family: 'Inter', sans-serif;
-  }
- 
-  /* The pill-shaped search bar */
-  .search-bar {
-    display: flex;           /* lay out icon + input side by side */
-    align-items: center;     /* vertically center both children */
-    gap: 10px;               /* space between filter icon and input */
-    border-radius: 999px;    /* large value = fully pill-shaped at any width */
-    border: 3px solid #e00;  /* red border */
-    background: lightpink;     /* light pink background */
-    padding: 10px 22px 10px 18px; /* top/right/bottom/left inner spacing */
-    width: 100%;
-    max-width: 520px;        /* prevents bar from getting too wide on large screens */
-    box-sizing: border-box;  /* padding included in width calculation */
-  }
- 
-  .search-icon {
-    flex-shrink: 0;                   /* prevent icon from squishing on narrow screens */
-    margin-right: 10px;               /* space between icon and the divider */
-  }
- 
- 
-  /* The text input field */
-  .search-bar input {
-    flex: 1;                 /* takes up all remaining horizontal space */
-    border: none;            /* remove default browser border */
-    background: transparent; /* let the pink bar background show through */
-    outline: none;           /* remove default browser focus ring */
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: red;          /* typed text appears red */
-    caret-color: red;    /* blinking cursor appears red */
-  }
- 
-  /* Placeholder text styling (requires its own rule — cannot be combined with input styles) */
-  .search-bar input::placeholder {
-    color: red;          /* lighter red so placeholder feels secondary to typed text */
-    opacity: 0.8;              /* Firefox reduces opacity by default — override it */
-    font-size: 1.5rem;
-  }
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 0.7rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* The pill-shaped search bar */
+.search-bar {
+  display: flex; /* lay out icon + input side by side */
+  align-items: center; /* vertically center both children */
+  gap: 10px; /* space between filter icon and input */
+  border-radius: 999px; /* large value = fully pill-shaped at any width */
+  border: 3px solid #e00; /* red border */
+  background: lightpink; /* light pink background */
+  padding: 10px 22px 10px 18px; /* top/right/bottom/left inner spacing */
+  width: 100%;
+  max-width: 520px; /* prevents bar from getting too wide on large screens */
+  box-sizing: border-box; /* padding included in width calculation */
+}
+
+.search-icon {
+  flex-shrink: 0; /* prevent icon from squishing on narrow screens */
+  margin-right: 10px; /* space between icon and the divider */
+}
+
+.search-bar input {
+  flex: 1; /* takes up all remaining horizontal space */
+  border: none; /* remove default browser border */
+  background: transparent; /* let the pink bar background show through */
+  outline: none; /* remove default browser focus ring */
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: red; /* typed text appears red */
+  caret-color: red; /* blinking cursor appears red */
+}
+
+.search-bar input::placeholder {
+  color: red; /* lighter red so placeholder feels secondary to typed text */
+  opacity: 0.8; /* Firefox reduces opacity by default — override it */
+  font-size: 1.5rem;
+}
+
+#admin-page-btn {
+  display: inline-block; /* allows the link to wrap tightly around the SVG */
+  text-decoration: none;
+}
+
+#admin-page-btn:hover {
+  opacity: 0.7; /* makes it a little transparent on hover as a visual cue */
+}

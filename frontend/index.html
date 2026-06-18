@@ -24,8 +24,43 @@
     <link rel="stylesheet" href="./css/search.css" />
   </head>
   <body>
-    <div class="container">
-      <h1><b>REFRIGERATOR SAVER</b></h1>
+    <div class="row" style="margin-top: 2.5vh">
+      <div class="col-10">
+        <h1><b>REFRIGERATOR SAVER</b></h1>
+      </div>
+      <div class="col">
+        <a id="admin-page-btn" href="/admin">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="54"
+            height="51"
+            viewBox="0 0 54 51"
+            fill="none"
+          >
+            <!-- The pill-shaped pink background of the button -->
+            <rect width="53.0606" height="51" rx="25.5" fill="red" />
+            <mask
+              id="mask0_4_327"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="54"
+              height="51"
+            >
+              <rect width="53.0606" height="51" rx="25.5" fill="#FF0000"/>
+            </mask>
+
+            <!-- The red body/torso circle — clipped by the mask so it doesn't overflow the pill -->
+            <g mask="url(#mask0_4_327)">
+              <circle cx="26.7878" cy="47.3939" r="14.9394" fill="lightpink" />
+            </g>
+
+            <!-- The red head circle — sits above the mask so it's fully visible -->
+            <circle cx="26.5303" cy="21.8939" r="10.5606" fill="lightpink" />
+          </svg>
+        </a>
+      </div>
 
       <div class="search-wrapper">
         <div class="search-bar">
@@ -40,13 +75,7 @@
             aria-hidden="true"
           >
             <!-- The circular lens of the magnifying glass -->
-            <circle
-              cx="8.5"
-              cy="8.5"
-              r="6"
-              stroke="#ff0000"
-              stroke-width="2"
-            />
+            <circle cx="8.5" cy="8.5" r="6" stroke="#ff0000" stroke-width="2" />
 
             <!-- The handle: angled down-right at 45deg, rounded end cap, like the macOS Spotlight icon -->
             <line
