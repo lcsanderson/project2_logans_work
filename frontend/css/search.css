@@ -45,22 +45,11 @@ h1 {
     box-sizing: border-box;  /* padding included in width calculation */
   }
  
-  /* The three-line filter icon container */
-  .filter-icon {
-    display: flex;
-    flex-direction: column;  /* stack the three lines vertically */
-    gap: 5px;                /* space between each line */
-    flex-shrink: 0;          /* prevent icon from compressing on narrow screens */
-    padding-right: 12px;     /* space between icon and the divider */
+  .search-icon {
+    flex-shrink: 0;                   /* prevent icon from squishing on narrow screens */
+    margin-right: 10px;               /* space between icon and the divider */
   }
  
-  /* Each individual line in the filter icon */
-  .filter-icon span {
-    display: block;
-    height: 2px;
-    background: red;     /* dark red lines */
-    border-radius: 2px;      /* rounded line ends */
-  }
  
   /* The text input field */
   .search-bar input {
@@ -69,7 +58,7 @@ h1 {
     background: transparent; /* let the pink bar background show through */
     outline: none;           /* remove default browser focus ring */
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: red;          /* typed text appears red */
     caret-color: red;    /* blinking cursor appears red */
@@ -79,4 +68,5 @@ h1 {
   .search-bar input::placeholder {
     color: red;          /* lighter red so placeholder feels secondary to typed text */
     opacity: 0.8;              /* Firefox reduces opacity by default — override it */
+    font-size: 1.5rem;
   }

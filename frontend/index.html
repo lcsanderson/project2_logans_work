@@ -29,11 +29,36 @@
 
       <div class="search-wrapper">
         <div class="search-bar">
-          <div class="filter-icon" aria-hidden="true">
-            <span style="width: 20px"></span>
-            <span style="width: 14px"></span>
-            <span style="width: 8px"></span>
-          </div>
+          <!-- aria-hidden="true" hides it from screen readers since it's decorative -->
+          <svg
+            class="search-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <!-- The circular lens of the magnifying glass -->
+            <circle
+              cx="8.5"
+              cy="8.5"
+              r="6"
+              stroke="#ff0000"
+              stroke-width="2"
+            />
+
+            <!-- The handle: angled down-right at 45deg, rounded end cap, like the macOS Spotlight icon -->
+            <line
+              x1="12.8"
+              y1="12.8"
+              x2="17"
+              y2="17"
+              stroke="#ff0000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
           <input type="text" id="recipeSearch" placeholder="Search recipes" />
         </div>
       </div>
