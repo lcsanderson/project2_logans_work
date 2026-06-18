@@ -31,6 +31,8 @@ export default [
     rules: {
       // ESLint recommended rules
       ...js.configs.recommended.rules,
+      ...jest.configs.recommended.rules,
+      
 
       indent: [
         "error",
@@ -54,5 +56,4 @@ export default [
       ],
     },
   },
-  eslintConfigPrettier,
 ];
