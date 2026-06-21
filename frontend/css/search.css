@@ -25,6 +25,24 @@ h1 {
   font-size: 3rem;
 }
 
+.top-pick-text {
+    color: red;
+    font-size: 5rem;
+    padding-bottom: 15px;
+}
+
+.top-pick-recipe-name {
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.top-pick-recipe-blurb{
+    color: red;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
 /* Center the bar on the page with some breathing room */
 .search-wrapper {
   display: flex;
@@ -50,7 +68,7 @@ h1 {
 
 .search-icon {
   flex-shrink: 0; /* prevent icon from squishing on narrow screens */
-  margin-right: 10px; /* space between icon and the divider */
+  margin-right: 10px; 
 }
 
 .search-bar input {
@@ -66,8 +84,8 @@ h1 {
 }
 
 .search-bar input::placeholder {
-  color: red; /* lighter red so placeholder feels secondary to typed text */
-  opacity: 0.8; /* Firefox reduces opacity by default — override it */
+  color: red; 
+  opacity: 0.8; 
   font-size: 1.5rem;
 }
 
@@ -77,5 +95,5 @@ h1 {
 }
 
 #admin-page-btn:hover {
-  opacity: 0.7; /* makes it a little transparent on hover as a visual cue */
+  opacity: 0.7; 
 }
